@@ -1,9 +1,9 @@
 void plot_QY_powder(){
 
 
-	auto *file_direct   = new TFile("./20250916_root/20250916_LiBZ_powder_ex312_Direct_QY.root","READ");
-	auto *file_blank    = new TFile("./20250916_root/20250916_LiBZ_powder_ex312_blank_QY.root","READ");
-	auto *file_indirect = new TFile("./20250916_root/20250916_LiBZ_powder_ex312_Indirect_QY.root","READ");
+	auto *file_direct   = new TFile("","READ");
+	auto *file_blank    = new TFile("","READ");
+	auto *file_indirect = new TFile("","READ");
 
 	auto *tree_direct  = (TTree*)file_direct->Get("spec");
 	auto *tree_blank   = (TTree*)file_blank->Get("spec");
